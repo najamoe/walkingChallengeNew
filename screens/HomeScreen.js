@@ -159,7 +159,7 @@ const HomePage = ({ navigation }) => {
       );
       setChallenges(challengesData);
     } catch (error) {
-      console.error("Error fetching challenges:", error);
+     
     }
   };
 
@@ -171,7 +171,7 @@ const HomePage = ({ navigation }) => {
     try {
       const currentUser = auth.currentUser;
       if (!currentUser) {
-        console.error("No user signed in.");
+       
         return;
       }
 
@@ -188,10 +188,10 @@ const HomePage = ({ navigation }) => {
           setUserChallenges([challengeId]);
         }
       } else {
-        console.log("No user challenges found for the current user.");
+        
       }
     } catch (error) {
-      console.error("Error fetching user challenges:", error);
+      
       Alert.alert(
         "Error",
         "Failed to fetch user challenges. Please try again later."
@@ -211,7 +211,7 @@ const HomePage = ({ navigation }) => {
     try {
         const currentUser = auth.currentUser;
         if (!currentUser) {
-            console.error("No user signed in.");
+           
             return;
         }
 
@@ -247,7 +247,7 @@ const HomePage = ({ navigation }) => {
 
         setCompletedChallenges(completedChallengesData);
     } catch (error) {
-        console.error("Error fetching completed challenges:", error);
+       
     }
 };
 
@@ -258,7 +258,7 @@ const HomePage = ({ navigation }) => {
         navigation.navigate("Login");
       })
       .catch((error) => {
-        console.error("Sign out error:", error);
+       
       });
   };
 
@@ -387,7 +387,7 @@ const HomePage = ({ navigation }) => {
     try {
       const currentUser = auth.currentUser;
       if (!currentUser) {
-        console.error("No user signed in.");
+        
         return;
       }
 
@@ -398,7 +398,6 @@ const HomePage = ({ navigation }) => {
       });
 
       // Fetch the details of the new challenge
-      console.log("Fetching details of the new challenge...");
       const newChallengeRef = doc(firestore, "Challenges", newChallengeId);
       const newChallengeDoc = await getDoc(newChallengeRef);
       if (newChallengeDoc.exists()) {
