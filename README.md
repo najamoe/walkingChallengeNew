@@ -1,2 +1,13 @@
-![Uploading Screenshot_20240606_215907_Gallery.jpg…]()
-![Screenshot_20240526_211052_Expo Go](https://github.com/najamoe/walkingChallengeNew/assets/113134845/0f2c545e-cfb2-4192-babf-a625178d0857)
+# WalkingChallenge
+
+WalkingChallenge is my exam project for my React Native elective course!
+
+The thought behind the app, is to inspire people to walk through challenges 
+
+### Screenshots
+
+<img src="https://github.com/najamoe/walkingChallengeNew/assets/113134845/0f2c545e-cfb2-4192-babf-a625178d0857" alt="Screenshot" width="300" />
+
+
+
+![Screenshot_20240606_215907_Gallery](https://github.com/najamoe/walkingChallengeNew/assets/113134845/aad79b1c-f358-44e0-a5ff-6a3c381a4de9)
